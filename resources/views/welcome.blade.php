@@ -83,8 +83,8 @@
                 <div class="title m-b-md">
                     E-Tourney
                 </div>
-                    <h1>AYAYA</h1>
-                    <h2>Welcome To E-Tourney NOOB!!</h2>
+                    <h1>HELO</h1>
+                    <h2>Welcome To E-Tourney</h2>
                 <div class="links">
                     <a href="{{ url('/home') }}">Home</a>
                     <a href="{{ url('/tournaments') }}">Tournaments</a>
@@ -92,5 +92,21 @@
                 </div>
             </div>
         </div>
+
+        <div>
+            <img src="\asset\Landing Page.png" class="gambar1">
+        </div>
+
+
     </body>
 </html>
+
+
+<style>
+.gambar1{
+    max-width: 100%;
+    max-height: 100%;
+
+}
+
+</style>

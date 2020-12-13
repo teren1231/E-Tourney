@@ -40,7 +40,7 @@
                         </li>
 
                         <li class="nav-item" style="float:left;">
-                            <a class="navbar-brand" href="{{ url('/news') }}" style="margin-left:200%;">
+                            <a class="navbar-brand" href="{{ url('/news') }}" style="margin-left:250%;">
                                 News
                             </a>
                         </li>
