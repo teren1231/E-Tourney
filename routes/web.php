@@ -19,10 +19,8 @@ Route::get('/', function () {
 
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/home', 'MyController@CallGames')->name('home');
 
-Route::get('/tournaments', 'MyController@tourney')->name('tourney');
+Route::get('/news/{id}', 'MyController@CallBerita')->name('news');
 
-Route::get('/news', 'MyController@news')->name('news');
-
-Route::get('/gameList', 'MyController@CallGames')->name('gameList');
+Route::get('/tournament/{id}', 'MyController@CallTournament')->name('tournament');

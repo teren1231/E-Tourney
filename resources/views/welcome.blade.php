@@ -80,15 +80,12 @@
             @endif
 
             <div class="content">
-                <div class="title m-b-md">
-                    E-Tourney
+                <div class="title m-b-md" style="margin-top:-250px;">
+                    <img src="asset/logoET" style="width:500px; height:500px;"> </img>
                 </div>
-                    <h1>HELO</h1>
-                    <h2>Welcome To E-Tourney</h2>
-                <div class="links">
-                    <a href="{{ url('/home') }}">Home</a>
-                    <a href="{{ url('/tournaments') }}">Tournaments</a>
-                    <a href="{{ url('/news') }}">News</a>
+                <div class="tulisan">
+                    <h1>COMPETITIVE ENTHUSIASM</h1>
+                    <p class="tulisan1">Compete with and against other players in leagues & tournaments across all skill levels in Apex Legends PUBG and VALORANT!</p>
                 </div>
             </div>
         </div>
@@ -109,4 +106,13 @@
 
 }
 
+.tulisan{
+    margin-top: -250px;
+}
+
+.tulisan1{
+    font-style: normal;
+    font-size: 24px;
+    color: black;
+}
 </style>

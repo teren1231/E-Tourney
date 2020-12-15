@@ -1,45 +1,18 @@
 @extends('layouts.app')
 
 @section('content')
-<div class="container">
-    <div class="row justify-content-center">
-        <div class="col-md-8">
-            <div class="card">
-                <div class="card-header">{{ __('Dashboard') }}</div>
-
-                <div class="card-body">
-                    @if (session('status'))
-                        <div class="alert alert-success" role="alert">
-                            {{ session('status') }}
-                        </div>
-                    @endif
-
-                    {{ __('You are logged in!') }}
-                    <br><br>
-                    <div>
-                    <h1>welcome<h1>
-                    </div>
-                </div>
-
-
+<div class="d-flex" style="max-width: 100%;">
+    @foreach($game as $game)
+    
+        <div class="card" style="max-width: 18rem; margin:20px;">
+        <a href="{{route('tournament' , $game->id)}}"><img src="/{{$game->photo}}" class="card-img-top" style="width: 18rem;"></a>
+            <div class="card-body">
+                <h5 class="card-title">{{$game->name}}</h5>
+                <p class="card-text">{{$game->description}}</p>
+                
             </div>
         </div>
-    </div>
 
-
-
-</div>
-<div>
-        <img src="\asset\Landing Page.png" class="gambar1">
-    </div>
+    
+    @endforeach</div>
 @endsection
-
-
-<style>
-.gambar1{
-    max-width: 100%;
-    max-height: 100%;
-
-}
-
-</style>

@@ -24,7 +24,7 @@
         <nav class="navbar navbar-expand-md navbar-light bg-secondary shadow-sm">
             <div class="container" style="max-height:20px;">
                 <a class="navbar-brand" href="{{ url('/home') }}">
-                    <img src="asset/logoET" style="width:100px;"> </img>
+                    <img src="/asset/logoET" style="width:100px;"> </img>
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
                     <span class="navbar-toggler-icon"></span>
@@ -32,25 +32,7 @@
 
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <!-- Left Side Of Navbar -->
-                    <ul class="navbar-nav mr-auto">
-                        <li class="nav-item" >
-                            <a class="navbar-brand" href="{{ url('/tournaments') }}"style="margin-left:50%;">
-                                Tournaments
-                            </a>
-                        </li>
 
-                        <li class="nav-item">
-                            <a class="navbar-brand" href="{{ url('/news') }}" style="margin-left:250%;">
-                                News
-                            </a>
-                        </li>
-
-                        <li class="nav-item">
-                            <a class="navbar-brand" href="{{ url('/gameList') }}" style="margin-left:250%;">
-                                Game List
-                            </a>
-                        </li>
-                    </ul>
 
                     <!-- Right Side Of Navbar -->
                     <ul class="navbar-nav ml-auto">
