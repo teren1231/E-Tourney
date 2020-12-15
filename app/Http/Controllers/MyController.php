@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\game;
 
 class MyController extends Controller
 {
@@ -12,5 +13,10 @@ class MyController extends Controller
 
     public function tourney(){
         return view('tourney');
+    }
+
+    public function CallGames(){
+        $game = game::all();
+        return view('gameList', ['game' => $game]);
     }
 }

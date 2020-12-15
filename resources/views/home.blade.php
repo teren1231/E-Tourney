@@ -25,5 +25,21 @@
             </div>
         </div>
     </div>
+
+
+
 </div>
+<div>
+        <img src="\asset\Landing Page.png" class="gambar1">
+    </div>
 @endsection
+
+
+<style>
+.gambar1{
+    max-width: 100%;
+    max-height: 100%;
+
+}
+
+</style>

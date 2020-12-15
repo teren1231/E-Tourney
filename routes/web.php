@@ -24,3 +24,5 @@ Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/tournaments', 'MyController@tourney')->name('tourney');
 
 Route::get('/news', 'MyController@news')->name('news');
+
+Route::get('/gameList', 'MyController@CallGames')->name('gameList');

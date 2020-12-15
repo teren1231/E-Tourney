@@ -7,7 +7,7 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>{{ config('app.name', 'Laravel') }}</title>
+    <title>{{ config('app.name', 'E-Tourney') }}</title>
 
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}" defer></script>
@@ -21,10 +21,10 @@
 </head>
 <body>
     <div id="app">
-        <nav class="navbar navbar-expand-md navbar-light bg-dark shadow-sm">
-            <div class="container">
-                <a class="navbar-brand" href="{{ url('/') }}">
-                    E - Tourney
+        <nav class="navbar navbar-expand-md navbar-light bg-secondary shadow-sm">
+            <div class="container" style="max-height:20px;">
+                <a class="navbar-brand" href="{{ url('/home') }}">
+                    <img src="asset/logoET" style="width:100px;"> </img>
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
                     <span class="navbar-toggler-icon"></span>
@@ -33,15 +33,21 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <!-- Left Side Of Navbar -->
                     <ul class="navbar-nav mr-auto">
-                    <li class="nav-item" >
+                        <li class="nav-item" >
                             <a class="navbar-brand" href="{{ url('/tournaments') }}"style="margin-left:50%;">
                                 Tournaments
                             </a>
                         </li>
 
-                        <li class="nav-item" style="float:left;">
+                        <li class="nav-item">
                             <a class="navbar-brand" href="{{ url('/news') }}" style="margin-left:250%;">
                                 News
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="navbar-brand" href="{{ url('/gameList') }}" style="margin-left:250%;">
+                                Game List
                             </a>
                         </li>
                     </ul>
