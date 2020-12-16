@@ -29,4 +29,8 @@ class MyController extends Controller
         $game = game::all();
         return view('news' , ['berita' => $berita , 'game' => $game]);
     }
+
+    public function CallRegistrasi(){
+        return view('registertourney');
+    }
 }

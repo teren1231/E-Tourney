@@ -24,3 +24,5 @@ Route::get('/home', 'MyController@CallGames')->name('home');
 Route::get('/news/{id}', 'MyController@CallBerita')->name('news');
 
 Route::get('/tournament/{id}', 'MyController@CallTournament')->name('tournament');
+
+Route::get('/registertourney', 'MyController@CallRegistrasi')->name('registertourney');

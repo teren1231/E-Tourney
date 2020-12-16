@@ -11,7 +11,10 @@ class tournamentSeeder extends Seeder
      */
     public function run()
     {
-        DB::table('tournaments')->insert(['game_id' => '1' , 'name' => 'Aerowolf' , 'photo' => 'asset/Tournament PUBG.png' ]);
+
+
+        DB::table('tournaments')->insert(['game_id' => '1', 'photo' => 'asset/Tournament PUBG.png' ]);
+        DB::table('tournaments')->insert(['game_id' => '2' , 'photo' => 'asset/TournamentAPEX.png' ]);
         
     }
 }

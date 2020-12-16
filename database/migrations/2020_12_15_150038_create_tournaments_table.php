@@ -17,7 +17,6 @@ class CreateTournamentsTable extends Migration
             $table->id();
             $table->unsignedBigInteger('game_id');
             $table->foreign('game_id')->references('id')->on('games');
-            $table->string('name');
             $table->string('photo');
         });
     }
